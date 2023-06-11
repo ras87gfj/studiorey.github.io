@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrip.js"></script>
+
+  </head>
+
+<body>
+  <div class="container">
+    <h1>Black Box</h1>
+
+    <header>
+      <h1 class="logo"><img src="/Pict/logo.jpeg"></h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Produk</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="product">
+      <img src="/Pict/gambar_produk1.jpeg" alt="Produk 1">
+      <h3>iPhone 13</h3>
+      <p>Harga: Rp18.000.000</p>
+      <button onclick="tambahKeKeranjang('Produk 1', 18000000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product">
+      <img src="/Pict/gambar_produk2.jpeg" alt="Produk 2">
+      <h3>iPhone 14</h3>
+      <p>Harga: Rp22.000.000</p>
+      <button onclick="tambahKeKeranjang('Produk 2', 22000000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product">
+      <img src="/Pict/gambar_produk3.jpeg" alt="Produk 3">
+      <h3>iPhone 15</h3>
+      <p>Harga: Rp33.000.000</p>
+      <button onclick="tambahKeKeranjang('Produk 3', 33000000)">Tambah ke Keranjang</button>
+    </div>
+
+    <h2>Keranjang Belanja</h2>
+    <ul id="keranjang"></ul>
+    <h4 id="total">Total Belanja: Rp<span id="total-belanja">0</span></h4>
+    
+    <div class="productcekout">
+      <button onclick="window.location.href='cekout.html'">cekout</button>
+      </div>
+    </div>
+</body>
+</html>
