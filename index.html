@@ -29,11 +29,13 @@
       <img src="Pict/gambar_produk1.jpeg" alt="Produk 1">
       <h3>iPhone 13</h3>
       <p>Harga: Rp15.000.000</p>
-      <p>
-        Ini adalah deskripsi singkat tentang produk terbaru kami. Produk ini dirancang dengan teknologi terkini 
-        dan memiliki fitur-fitur canggih yang memenuhi kebutuhan Anda. Dengan desain yang elegan, produk ini 
-        cocok untuk berbagai keperluan.
-    </p>
+      <div class="container">
+        <p class="centered-paragraph">
+          Ini adalah deskripsi singkat tentang produk terbaru kami. Produk ini dirancang dengan teknologi terkini 
+          dan memiliki fitur-fitur canggih yang memenuhi kebutuhan Anda. Dengan desain yang elegan, produk ini 
+          cocok untuk berbagai keperluan.
+      </p>
+      </div>
       <button onclick="tambahKeKeranjang('Produk 1', 15000000)">Tambah ke Keranjang</button>
     </div>
 
@@ -59,5 +61,16 @@
       <button onclick="window.location.href='cekout.html'">cekout</button>
       </div>
     </div>
+
+    <style>
+      .container {
+          text-align: center; /* Mengatur teks di tengah */
+      }
+
+      .centered-paragraph {
+          width: 50%; /* Mengatur lebar paragraf */
+          margin: 0 auto; /* Mengatur margin agar paragraf berada di tengah */
+      }
+  </style>
 </body>
 </html>
