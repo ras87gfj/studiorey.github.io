@@ -99,6 +99,7 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
 }
 
 .product button:hover {
